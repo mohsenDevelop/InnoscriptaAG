@@ -16,5 +16,5 @@ export const newsApi = api.injectEndpoints({
 });
 
 export const {
-    useCarsListQuery,
+    useNewsListQuery,
 } = newsApi;

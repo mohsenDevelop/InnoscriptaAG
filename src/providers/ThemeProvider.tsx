@@ -8,7 +8,7 @@ export const ThemProvider = ({
     children: React.ReactNode;
 }) => {
     return (
-        <DirectionProvider initialDirection='rtl'>
+        <DirectionProvider initialDirection='ltr'>
             <MantineProvider theme={theme}>{children}</MantineProvider>
         </DirectionProvider>
     );

@@ -1,12 +1,10 @@
-@import url('./fontiran.css');
-
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   padding: 0;
   margin: 0;
-  font-family: IRANYekanX !important;
-  direction: rtl;
+  font-family: Inter !important;
+  direction: ltr;
 }
 
 a {

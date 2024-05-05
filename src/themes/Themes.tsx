@@ -1,7 +1,7 @@
 import { createTheme } from '@mantine/core';
 
 export const theme = createTheme({
-  fontFamily: 'IRANYekanX !important',
+  fontFamily: 'Inter !important',
   primaryColor: 'primary',
   colors: {
     'primary': [

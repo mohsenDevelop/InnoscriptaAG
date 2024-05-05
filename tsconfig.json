@@ -1,0 +1,95 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom",
+      "dom.iterable",
+      "esnext",
+    ],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@mui/styled-engine": [
+        "./node_modules/@mui/styled-engine-sc"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
+      "@uiKits": [
+        "src/uiKits"
+      ],
+      "@utils": [
+        "src/utils"
+      ],
+      "@assets": [
+        "src/assets"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@layouts": [
+        "src/layouts"
+      ],
+      "@providers": [
+        "src/providers"
+      ],
+      "@themes": [
+        "src/themes"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@routes": [
+        "src/routes"
+      ],
+      "@hooks": [
+        "src/hooks"
+      ],
+      "@typings": [
+        "src/typings"
+      ],
+      "@configs": [
+        "src/configs"
+      ],
+      "@api": [
+        "src/api"
+      ],
+      "@slices": [
+        "src/slices"
+      ],
+      "@store": [
+        "src/store"
+      ],
+    }
+  },
+  "include": [
+    "src",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+}

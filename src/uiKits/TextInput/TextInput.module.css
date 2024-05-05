@@ -1,0 +1,7 @@
+.input {
+    height: 40px !important;
+
+    [data-error] & {
+        border-color: var(--mantine-color-red-9);
+    }
+}

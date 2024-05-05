@@ -10,7 +10,7 @@ export const newsApi = api.injectEndpoints({
             query: () => ({
                 url: '/api/product/vehicle/types',
             }),
-            providesTags: ['Cars'],
+            providesTags: ['News'],
         }),
     }),
 });

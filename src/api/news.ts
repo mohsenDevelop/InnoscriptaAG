@@ -13,7 +13,6 @@ export const newsApi = api.injectEndpoints({
                     url: `/v2/top-headlines?country=us&apiKey=${import.meta.env.VITE_API_KEY}&page=${page}&pageSize=${pageSize}`,
                 }),
                 providesTags: ['News'],
-                transformResponse: (response: Magazine) => ({ ...response, articles: response?.articles?.filter((article) => !!article.author) })
             }
         ),
     }),

@@ -1,22 +1,13 @@
-import { useNewsListQuery } from '@api';
-import { Skeleton, Card, Image, Text, SimpleGrid } from '@uiKits';
+import { Card, Image, Text, SimpleGrid, } from '@uiKits';
 import { HomePagination } from '../HomePagination';
+import { useHomeNews } from './HomeNews.hooks';
+import { HomeSkeleton } from '../HomeSkeleton';
 
 export const HomeNews = () => {
 
-    const { data, isFetching } = useNewsListQuery(
-        { page: 1, pageSize: 21 },
-    );
+    const { data, isLoading } = useHomeNews();
 
-    console.log({ data });
-
-    if (isFetching) {
-        Array(15)
-            .fill(0)
-            .map((_, index) => (
-                <Skeleton key={index} h={28} mt='sm' animate={false} />
-            ));
-    }
+    if (isLoading) { return <HomeSkeleton />; }
 
     return (
         <>

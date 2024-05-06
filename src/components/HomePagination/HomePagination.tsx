@@ -1,12 +1,12 @@
 import { FC } from 'react';
-import { useSearchParams } from 'react-router-dom';
 
 import { Pagination, Flex } from '@uiKits';
 import { HomePaginationProps } from './HomePagination.types';
+import { useHomePagination } from './HomePagination.hooks';
 
 export const HomePagination: FC<HomePaginationProps> = ({ total }) => {
 
-    let [searchParams, setSearchParams] = useSearchParams();
+    const { handleChangePage, paginationPage } = useHomePagination();
 
     return (
         <Flex
@@ -16,6 +16,8 @@ export const HomePagination: FC<HomePaginationProps> = ({ total }) => {
         >
             <Pagination
                 total={total}
+                onChange={handleChangePage}
+                value={paginationPage}
             />
         </Flex>
     );
